@@ -11,7 +11,7 @@ AUDIO_EXTENSIONS = {'.mp3', '.wav', '.aac', '.m4a'}
 
 class ScreenHijack:
     def __init__(self, assets_dir="assets"):
-        self.window_name = "OI CB DO UR WORK"
+        self.window_name = "OI DO UR WORK"
         self.is_active = False
         self.audio_process = None
         self.assets_dir = assets_dir
@@ -71,8 +71,8 @@ class ScreenHijack:
             display = np.zeros((screen_h, screen_w, 3), dtype=np.uint8)
             display[:] = (0, 0, 255)
 
-        # Add "OI CB DO UR WORK" overlay at the bottom
-        overlay_text = "OI CB DO UR WORK"
+        # Add "OI DO UR WORK" overlay at the bottom
+        overlay_text = "OI DO UR WORK"
         font = cv2.FONT_HERSHEY_SIMPLEX
         font_scale = screen_w / 500
         thickness = max(3, int(screen_w / 300))
